@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/Scrollbar.unity
+- path: Assets/Scenes/InfiniteNext.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

@@ -85,6 +85,7 @@ namespace FancyScrollView.TakaharaNext
         Context.SelectedIndex = index;
         Refresh();
     }
+    
 
 }
 }

@@ -4,18 +4,23 @@ using UnityEngine;
 using UnityEngine.UI;
 using EasingCore;
 
-namespace FancyScrollView.TakaharaNext
+namespace FancyScrollView.Takahara
 {
    
     public class ExampleTakahara : MonoBehaviour {
 
-        [SerializeField] ScrollView scrollView=default;
-        [SerializeField] InputField paddingTopInputField = default;
-        [SerializeField] InputField paddingBottomInputField = default;
-        [SerializeField] InputField spacingInputField = default;
+    
+        [SerializeField] MyScrollView scrollView = default;
 
-        
+        void Start()
+        {
+            var items = Enumerable.Range(0, 20)
+                .Select(i => new MyCellData($"Cell {i}"))
+                .ToArray();
 
+            scrollView.UpdateData(items);
+            scrollView.SelectCell(0);
+        }
 
     }
 }

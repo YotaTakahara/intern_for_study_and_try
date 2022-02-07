@@ -16,7 +16,7 @@ namespace FancyScrollView.Takahara
         private void Start()
         {
             var items = Enumerable.Range(0, 20)
-                .Select(i => new MyItemData($"Cell {i}"))
+                .Select(i => new MyCellData($"Cell {i}"))
                 .ToArray();
             scrollView.UpdateData(items);
         }

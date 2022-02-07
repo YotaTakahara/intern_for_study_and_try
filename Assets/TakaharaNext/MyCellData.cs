@@ -4,5 +4,10 @@ using UnityEngine;
 
 public class MyCellData
 {
-    public string Message;
+    public string Message { get; }
+
+    public MyCellData(string message)
+    {
+        Message = message;
+    }
 }
